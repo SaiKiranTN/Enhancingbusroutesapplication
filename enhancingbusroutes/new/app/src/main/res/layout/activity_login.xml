@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/login_txt_headertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/login_txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_txt_headertext"
+        android:layout_margin="20dp"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/login_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_txt_username"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+
+
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@id/login_txt_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="405dp"
+        android:text="LogIn"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck"
+        android:backgroundTint="#1A8C9A"/>
+
+    <Button
+        android:id="@+id/login_btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_txt_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="291dp"
+        android:text="Sign In"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck"
+        android:backgroundTint="#1A8C9A"/>
+
+
+</RelativeLayout>
